@@ -267,6 +267,10 @@ h1.greetings {
   line-height: 1.5;
 }
 
+
+
+
+
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SLUT PÅ HEADER TOPWRAPPER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MIDDLE WRAPPER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  */
 /* skill section */
@@ -298,7 +302,7 @@ h1.greetings {
 .itemContainer p {
   margin: 10px 0 0 0;
 }
-
+/* skill section */
 /* work section */
 .workSection article {
   display: flex;
@@ -349,8 +353,35 @@ h1.greetings {
 /* .workDescribeContainer a{
   margin-right: 20px;
 } */
+
 .secondWorkList, .thirdWorkList {
   margin-top: 10px;
+}
+
+.toggle-text {
+  display: none;
+}
+
+
+.showmore {
+  font-size: 1.1em;
+  margin-top: 1.5em;
+}
+
+.showmore .more, .showmore.show .dots {
+  display: none
+}
+
+.showmore.show .more {
+  display: inline
+}
+
+.showmore a {
+  cursor: pointer;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  font-weight: bold;
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SLUT PÅ MIDDLE WRAPPER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  */
@@ -464,7 +495,7 @@ footer {
   text-decoration: none;
 }
 
-.button {
+.workButton {
   background: #f9f9f9;
   background-image: -webkit-linear-gradient(top, #f9f9f9, #d4dcdf);
   background-image: -moz-linear-gradient(top, #f9f9f9, #d4dcdf);
@@ -479,7 +510,7 @@ footer {
   font-size: 15px;
   font-weight: 100;
   padding: 5px;
-  margin-right: 10px;
+  margin: 10px 10px 0 0;
   /* -webkit-box-shadow: 1px 1px 20px 0 #000000;
    -moz-box-shadow: 1px 1px 20px 0 #000000;
    box-shadow: 1px 1px 20px 0 #000000;
@@ -491,7 +522,7 @@ footer {
   text-align: center;
 }
 
-.button:hover {
+.workButton:hover {
   border: solid #FFFFFF 1px;
   background: #316B83;
   background-image: -webkit-linear-gradient(top, #f9f9f9, #f9f9f9);
