@@ -21,6 +21,10 @@ a {
   text-decoration: none;
 }
 
+p{
+  font-weight: bold;
+}
+
 header {
   height: 100vh;
   display: flex;
@@ -33,7 +37,7 @@ section {
   padding: 80px 0;
 }
 
-.sectionHead span::before {
+/* .sectionHead span::before {
   content: "";
   position: absolute;
   left: 0;
@@ -51,7 +55,7 @@ section {
   width: 50px;
   height: 1px;
   background: #333;
-}
+} */
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SIDO menyn !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  */
 
@@ -72,7 +76,7 @@ section {
 }
 
 .sidenav:hover {
-    width: 220px;
+  width: 220px;
 
 }
 
@@ -204,11 +208,15 @@ h1.greetings {
 
 .greetingParaTwo {
   letter-spacing: 1px;
-  color: #5F6F81;
   font-size: 1rem;
   min-width: 250px;
   line-height: 1.4;
   margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.greetings h1, .greetings span {
+color: #316B83;
 }
 
 .myImg {
@@ -225,7 +233,8 @@ h1.greetings {
   vertical-align: super;
 }
 
-.resumé .far, .fab {
+.resumé .far,
+.fab {
   color: #f9f9f9;
 }
 
@@ -302,6 +311,7 @@ h1.greetings {
 .itemContainer p {
   margin: 10px 0 0 0;
 }
+
 /* skill section */
 /* work section */
 .workSection article {
@@ -354,7 +364,8 @@ h1.greetings {
   margin-right: 20px;
 } */
 
-.secondWorkList, .thirdWorkList {
+.secondWorkList,
+.thirdWorkList {
   margin-top: 10px;
 }
 
@@ -366,9 +377,11 @@ h1.greetings {
 .showmore {
   font-size: 1.1em;
   margin-top: 1.5em;
+  font-weight: normal;
 }
 
-.showmore .more, .showmore.show .dots {
+.showmore .more,
+.showmore.show .dots {
   display: none
 }
 
@@ -538,21 +551,3 @@ footer {
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SLUT PÅ BUTTONS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  */
 
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MEDIA !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  */
-
-
-@media (min-width: 991px) {
-  .sidenav span{
-    display: none;
-  }
-  .sidenav:hover {
-      width: 220px;
-    }
-    .sidenav:hover span {
-      display: block;
-    }
-}
-
-
-
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SLUT PÅ MEDIA !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  */
