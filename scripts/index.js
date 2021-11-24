@@ -1,5 +1,4 @@
 
-// all som har klassen showmore, för varje function
 document.querySelectorAll(".showmore").forEach(function (p) {
   p.querySelector("a").addEventListener("click", function() {
     p.classList.toggle("show");
@@ -21,3 +20,5 @@ document.querySelectorAll("a[href^=\"#\"]").forEach((anchor) => {
     });
   });
 });
+
+

@@ -1,0 +1,80 @@
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MEDIA !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  */
+@media (max-width: 1050px){
+    .workSection article{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 800px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .myImg {
+        margin: 10px auto;
+        width: 150px;
+        height: 150px;
+    }
+
+    .aboutContainer p {
+        padding: 20px 20px;
+    }
+
+    .sectionHead span,
+    .sectionHead h2 {
+        padding: 0 0;
+    }
+
+    .sectionContainer {
+        padding: 0 0;
+    }
+
+    .skillsGrid {
+        justify-items: center;
+        padding: 10px 5px;
+    }
+
+    .workSection article {
+        flex-direction: column;
+    }
+
+    .workDescribeContainer {
+        margin-left: 0px;
+    }
+
+    .workImgContainer {
+        flex: 0 0 80px;
+        display: none;
+    }
+
+    .contactContainer {
+        display: none;
+    }
+}
+
+
+
+@media (min-width: 370px) {
+    .sidenav span {
+        display: none;
+    }
+
+    .sidenav:hover {
+        width: 220px;
+    }
+
+    .sidenav:hover span {
+        display: block;
+    }
+
+    .myFooter{
+        padding: 0 0;
+    }
+
+
+}
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SLUT PÅ MEDIA !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  */
