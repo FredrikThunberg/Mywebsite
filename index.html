@@ -17,37 +17,36 @@
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap" rel="stylesheet">
 
 
-  <title></title>
+  <title>Fredrik Thunberg</title>
 </head>
 
 <body>
-
-  <div id="home" class="visuallyHidden" tabindex="0">
-
-  </div>
-
+      <div id="home"></div>
   <!-- sido menyn -->
-
+ 
   <aside class="sidenav" id="sideMenu">
+     
     <p class="sideNavHeader">FT</p>
 
     <nav>
-      <ul class="navBar">
+
+
+      <ul class="navBar" id="navBar">
         <li class="homeNav">
-          <a class="active homeIcon" href="#home"><i class="fa fa-home"> <span>Hem</span> </i></a>
+          <a class="active homeIcon" class="navItem" href="#home"><i class="fa fa-home"> <span class="navItemName">Hem</span> </i></a>
 
         </li>
         <li class="aboutNav">
-          <a href="#about"><i class="far fa-address-card"> <span>Om</span> </i></a>
-        </li>
-        <li class="aboutNav">
-          <a href="#skills"><i class="far fa-laptop-code"> <span>Skill</span> </i></a>
+          <a href="#about" class="navItem"><i class="far fa-address-card"> <span class="navItemName">Om</span> </i></a>
         </li>
         <li class="skillsNav">
-          <a href="#work"><i class="far fa-file-word"> <span>Projekt</span> </i></a>
+          <a href="#skills" class="navItem"><i class="far fa-laptop-code"> <span class="navItemName">Skill</span> </i></a>
         </li>
         <li class="worksNav">
-          <a href="#contact"><i class="far fa-phone"> <span>Kontakt</span> </i></a>
+          <a href="#work" class="navItem"><i class="far fa-file-word"> <span class="navItemName">Projekt</span> </i></a>
+        </li>
+        <li class="contactNav">
+          <a href="#contact" class="navItem"><i class="far fa-phone"> <span class="navItemName">Kontakt</span> </i></a>
           </div>
         </li>
 
@@ -68,6 +67,16 @@
 
   </aside>
 
+  <button id="hamburger-menu" data-toggle="ham-navigation" class="hamburger-menu-button"><span class="hamburger-menu-button-open">Menu</span></button>
+<nav id="ham-navigation" class="ham-menu">
+  <ul class="menu">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#footer">Contact</a></li>
+  </ul>
+</nav>
+
 
   <!-- header topwrapper -->
   <div class="outWrapper">
@@ -85,16 +94,16 @@
                 Dev</span> och jag har som mål att börja arbeta som <span>Utvecklare</span> så snart jag kan. </p>
 
             <div class="resumé">
-              <button class="button" type="button" name="button"> <a href="Documents/Fredrik-Thunberg-CV.pdf"> <i
+              <button class="button" type="button" name="button"> <a href="Documents/Fredrik-Thunberg-CV.pdf" target="_blank"> <i
                     class="far fa-file fa-2x"></i> <span>Resumé</span> </a></button>
-              <button class="button" type="button" name="button"> <a href="Documents/Udemy-Certifikat.pdf"> <i
+              <button class="button" type="button" name="button"> <a href="Documents/Udemy-Certifikat.pdf" target="_blank"> <i
                     class="far fa-user-graduate fa-2x"></i> </a></button>
-              <button class="button" type="button" name="button"> <a href="https://github.com/FredrikThunberg"> <i
+              <button class="button" type="button" name="button"> <a href="https://github.com/FredrikThunberg" target="_blank"> <i
                     class="fab fa-github fa-2x"></i> </a></button>
-              <button class="button" type="button" name="button"> <a href="https://www.instagram.com/sneakyphoto.swe/">
+              <button class="button" type="button" name="button"> <a href="https://www.instagram.com/sneakyphoto.swe/" target="_blank">
                   <i class="fab fa-instagram fa-2x"></i> </a></button>
               <button class="button" type="button" name="button"> <a
-                  href="https://www.linkedin.com/in/fredrik-thunberg-3168a3190/"> <i
+                  href="https://www.linkedin.com/in/fredrik-thunberg-3168a3190/" target="_blank"> <i
                     class="fab fa-linkedin-in fa-2x"></i> </a></button>
             </div>
           </div>
@@ -210,20 +219,46 @@
           <h2>Projekt</h2>
         </div>
         <div class="workContainer sectionContainer">
+          
+          <article class="workBox">
+            <div class="workImgContainer">
+              <img
+                src="Bilder/Notebook.png"
+                alt="">
+            </div>
+            <div class="workDescribeContainer">
+              <h3>Notebook</h3>
+              <h4>Technologies Used: <span class="highlight">React</span>, <span class="highlight">material-ui & Material icons</span>, <span class="highlight">Css</span>. </h4>
+              <ul>
+                <li>                    
+                  <p class="showmore"> Notebook... inte boken eller filmen, utan en ToDoList
+                    <span class="dots">...</span><span class="more">där du kan lägga till notes och ta bort notes
+                      
+                    </span>
+                    <a> Show More</a>
+                  </p>
+                </li>
+              </ul>
+              <div class="workLinks">
+                <button class="workButton" type="button" name="button"><a href="https://fredrikthunberg.github.io/notebook-app/" target="_blank">Live</a></button>
+                <button class="workButton" type="button" name="button"><a href="https://github.com/FredrikThunberg/notebook-app" target="_blank">Repo</a></button>
+              </div>
+            </div>
+          </article>
+          
           <article class="workBox">
             <div class="workImgContainer">
               <img src="Bilder/emojipic.png" alt="">
             </div>
             <div class="workDescribeContainer">
               <h3>Emoji wiki-ish</h3>
-              <h4>Technologies Used: <span>React</span>, <span>Html</span>, <span>Css</span>, <span>Javascript.</span>
+              <h4>Technologies Used: <span class="highlight">React</span>, <span class="highlight">Html</span>, <span class="highlight">Css</span>, <span class="highlight">Javascript</span>.
               </h4>
               <ul>
                 <li>
                   <p class="showmore"> Emoji wiki-ish är ett projekt som visar en emoji och emojins
                     <span class="dots">...</span><span class="more">betydelse i olika senarium. klickar man på emojins
-                      namn kommer man till
-                      www.emojimeanings.net, där det finns fler emojis att utforska. </span>
+                      namn kommer man till en hemsida där det finns fler emojis att utforska. </span>
                     <a> Show More</a>
                   </p>
                 </li>
@@ -231,9 +266,9 @@
               </ul>
               <div class="workLinks">
                 <button class="workButton" type="button" name="button"><a
-                    href="https://fredrikthunberg.github.io/my-app/">Live</a></button>
+                    href="https://fredrikthunberg.github.io/my-app/" target="_blank">Live</a></button>
                 <button class="workButton" type="button" name="button"><a
-                    href="https://github.com/FredrikThunberg/my-app">Repo</a></button>
+                    href="https://github.com/FredrikThunberg/my-app" target="_blank">Repo</a></button>
               </div>
             </div>
           </article>
@@ -244,7 +279,7 @@
             </div>
             <div class="workDescribeContainer">
               <h3>B-Game</h3>
-              <h4>Technologies Used: <span>React</span>, <span>Styled-Components</span>. </h4>
+              <h4>Technologies Used: <span class="highlight">React</span>, <span class="highlight">Styled-Components</span>. </h4>
               <ul>
                 <li>
                   <p class="showmore"> B-game är en e-commerce sida där man helt enkelt kan köpa
@@ -259,7 +294,34 @@
               <div class="workLinks">
                 <button class="workButton" type="button" name="button"><a href="#">Live</a></button>
                 <button class="workButton" type="button" name="button"><a
-                    href="https://github.com/FredrikThunberg/b-game-app">Repo</a></button>
+                    href="https://github.com/FredrikThunberg/b-game-app" target="_blank">Repo</a></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="workBox">
+            <div class="workImgContainer">
+              <img
+                src="Bilder/Restaurant.png"
+                alt="">
+            </div>
+            <div class="workDescribeContainer">
+              <h3>Restaurant Menu</h3>
+              <h4>Technologies Used: <span class="highlight">React</span>, <span class="highlight">Javascript</span>. </h4>
+              <ul>
+                <li>
+                  <p class="showmore"> Restaurant Menu är en React sida där man kan se en 
+                    <span class="dots">...</span><span class="more">meny med olika maträtter ispererad av
+                      Europa. <br> Du kan se pris, bild och beskrivning vad det är för något man köper. <br> Man kan också klicka på breakfast
+                      och få enbart maträtter för frukost.
+                    </span>
+                    <a> Show More</a>
+                  </p>
+                </li>
+              </ul>
+              <div class="workLinks">
+                <button class="workButton" type="button" name="button"><a href="https://fredrikthunberg.github.io/restaurant-app/" target="_blank">Live</a></button>
+                <button class="workButton" type="button" name="button"><a href="https://github.com/FredrikThunberg/restaurant-app" target="_blank">Repo</a></button>
               </div>
             </div>
           </article>
@@ -270,11 +332,11 @@
             </div>
             <div class="workDescribeContainer">
               <h3>Travel Asia</h3>
-              <h4>Technologies Used: <span>Html</span>, <span>Css</span> </h4>
+              <h4>Technologies Used: <span class="highlight">Html</span>, <span class="highlight">Css</span>. </h4>
               <ul>
-                <li>
+                <li> 
                   <p class="showmore">Responsiv resebyrå webbsida för resor till asien där
-                    <!-- stanna här -->
+                    
                     <span class="dots">...</span><span class="more"> man kan få hjälp med att boka resa till asien,
                       eller boka guidade gruppresor. (landing page) </span>
                     <a> Show More</a>
@@ -283,77 +345,15 @@
               </ul>
               <div class="workLinks">
                 <button class="workButton" type="button" name="button"><a
-                    href="https://fredrikthunberg.github.io/Travel-Asia/">Live</a></button>
+                    href="https://fredrikthunberg.github.io/Travel-Asia/" target="_blank">Live</a></button>
                 <button class="workButton" type="button" name="button"><a
-                    href="https://github.com/FredrikThunberg/Travel-Asia">Repo</a></button>
+                    href="https://github.com/FredrikThunberg/Travel-Asia" target="_blank">Repo</a></button>
               </div>
             </div>
           </article>
 
-          <article class="workBox">
-            <div class="workImgContainer">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkvoqTF_QJtmAE9cXB-ES2O7tb6oB5vdyLKA&usqp=CAU"
-                alt="">
-            </div>
-            <div class="workDescribeContainer">
-              <h3>Coming Soon</h3>
-              <h4>Technologies Used: <span>...</span>, <span>...</span>, <span>...</span> </h4>
-              <ul>
-                <li>
-                  <p class="showmore"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    <span class="dots">...</span><span class="more">Phasellus imperdiet, nulla et dictum interdum,
-                      nisi lorem egestas vitae scel
-                      erisque enim ligula venenatis dolor.
-                      Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut
-                      aliquet.
-                      Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis
-                      imperdiet sed ornare turpis.
-                      Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum.
-                      Sed dapibus pulvinar nibh tempor porta.</span>
-                    <a> Show More</a>
-                  </p>
-                </li>
-              </ul>
-              <div class="workLinks">
-                <button class="workButton" type="button" name="button"><a href="#">Live</a></button>
-                <button class="workButton" type="button" name="button"><a href="#">Repo</a></button>
-              </div>
-            </div>
-          </article>
-
-          <article class="workBox">
-            <div class="workImgContainer">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkvoqTF_QJtmAE9cXB-ES2O7tb6oB5vdyLKA&usqp=CAU"
-                alt="">
-            </div>
-            <div class="workDescribeContainer">
-              <h3>Coming Soon</h3>
-              <h4>Technologies Used: <span>...</span>, <span>...</span>, <span>...</span> </h4>
-              <ul>
-                <li>
-                  <p class="showmore"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    <span class="dots">...</span><span class="more">Phasellus imperdiet, nulla et dictum interdum,
-                      nisi lorem egestas vitae scel
-                      erisque enim ligula venenatis dolor.
-                      Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut
-                      aliquet.
-                      Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis
-                      imperdiet sed ornare turpis.
-                      Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum.
-                      Sed dapibus pulvinar nibh tempor porta.</span>
-                    <a> Show More</a>
-                  </p>
-                </li>
-              </ul>
-              <div class="workLinks">
-                <button class="workButton" type="button" name="button"><a href="#">Live</a></button>
-                <button class="workButton" type="button" name="button"><a href="#">Repo</a></button>
-              </div>
-            </div>
-          </article>
-
+          
+          
 
         </div>
       </section>
@@ -380,7 +380,7 @@
             <div class="flexContainer">
               <div class="typeBox">
                 <i class="far fa-file fa-3x"></i>
-                <h4><a href="Documents/CV.pdf">Resumé</a></h4>
+                <h4><a href="Documents/Fredrik-Thunberg-CV.pdf" target="_blank">Resumé</a></h4>
 
               </div>
             </div>
@@ -405,7 +405,7 @@
     </div>
   </div>
 
-  <footer>
+  <footer id="footer">
     <div class="myFooter">
       <div class="footerHeading">
         <p> <i class="fas fa-phone"></i> +4670-55 738 97 </p>
@@ -419,7 +419,10 @@
 
 
 
-
+  <script
+			  src="https://code.jquery.com/jquery-3.6.0.js"
+			  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			  crossorigin="anonymous"></script>
   <script src="scripts/index.js"></script>
 </body>
 
