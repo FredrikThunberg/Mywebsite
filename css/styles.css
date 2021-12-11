@@ -90,6 +90,7 @@ section {
   text-align: center;
 }
 
+
 .navBar {
   padding-left: 0;
 }
@@ -276,6 +277,9 @@ color: #316B83;
   line-height: 1.5;
 }
 
+.aboutContainer a {
+color: #316B83;
+}
 
 
 
@@ -338,14 +342,14 @@ color: #316B83;
   height: auto; */
 }
 
-.workDescribeContainer {
-  margin-left: 30px;
-}
-
 .workImgContainer img {
   border: 1px solid #ddd;
   border-radius: 10px;
   width: 100%;
+}
+
+.workDescribeContainer {
+  margin-left: 30px;
 }
 
 .workDescribeContainer h3 {
@@ -354,6 +358,11 @@ color: #316B83;
 
 .workDescribeContainer h4 {
   margin: 10px 0 0 0;
+}
+
+.highlight {
+  color: #316B83;
+  font-size: 18px;
 }
 
 .workDescribeContainer ul {
@@ -551,3 +560,57 @@ footer {
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SLUT PÅ BUTTONS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  */
 
+.ham-menu {
+  position: fixed;
+  top: 42px;
+  left: 0;
+  margin: auto;
+  max-width: 570px;
+  overflow: hidden;
+  padding: 10px;
+  z-index: 50;
+}
+
+.ham-menu ul {
+  -webkit-transform: translateX(-110%);
+  transform: translateX(-110%);
+  background-color: #4b839b;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+}
+
+.ham-menu.on ul {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+.ham-menu ul {
+  font-size: 0;
+}
+
+.ham-menu ul li {
+  display: inline-block;
+}
+
+.ham-menu ul li:first-child .ham-menu ul li a {
+  padding-left: 30px;
+}
+
+.ham-menu ul li a {
+  padding: 15px;
+  display: block;
+  background-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-size: 13px;
+}
+
+.ham-menu ul li.active a,
+.ham-menu ul li a:hover {
+  background-color: #2980b9;
+  color: #fff !important;
+
+}
