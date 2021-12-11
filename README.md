@@ -1,7 +1,7 @@
 ## Portfolio page
 
-Hello this is my protfolio page and i try to constantly updated with new stuff i learn or thinks is the right thing for my protfolio, <br>
-the site so consider never done :)
+Hello this is my protfolio page and i try to constantly update with new stuff <br>
+that i learn or thinks is the right thing for my protfolio so consider my portfolio never really done :)
 
 
 
