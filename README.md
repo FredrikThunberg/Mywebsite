@@ -3,8 +3,9 @@
 Hello this is my protfolio page and i try to constantly updated the site so consider never done :)
 
 
-Technology used|
---------------
-HTML|
+
+Technology Used  | 
+------------- | 
+HTML  | 
+Javascript  | 
 Css|
-Javascript|
