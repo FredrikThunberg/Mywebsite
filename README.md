@@ -5,8 +5,8 @@ that i learn or thinks is the right thing for my protfolio so consider my portfo
 
 
 
-Technology Used  | 
-------------- | 
+Technology Used  | Link
+------------- | -------------
 HTML  | 
 Javascript  | 
 Sass|[Sass](https://sass-lang.com/)
